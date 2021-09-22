@@ -103,4 +103,17 @@ our build and deployment pipelines.
     - Protractor framework is used for End to End Testing.
 
     - BDD frameworks like Cucumber are also used for testing the functional flows.
-    
+
+## Protractor Framework
+
+- Protractor is an open source E2E testing framework for Angular applications.
+
+- It is built by a team in Google on the top of WebDriver.
+
+- It also works as a solution integrator that combines powerful technologies such as
+NodeJS, Selenium, Jasmine, WebDriver, Cucumber, Mocha etc.
+
+- Along with testing of Angular application, we can also use Protractor for automated
+regression tests for any web applications.
+
+- It allows us to test our application just like a real user because it runs the test using an actual browser.
