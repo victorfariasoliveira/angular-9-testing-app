@@ -48,3 +48,18 @@ Application called shop4less for running tests in Angular with Angular 9 and Jas
             console.log('navigated to page')
         })
     })
+
+## Karma Framework
+- Karma is an open source testing framework for JavaScript.
+- Karma is created and maintained primarily by the core Angular team.
+- The framework is natively integrated into the Angular apps by default.
+- Since it's integrated, we can easily run our tests from the CLI console.
+- One of the striking features is the ability to run on different browsers resolutions like Tablet, Mobile...
+- Karma is used for running and executing the test scripts.
+- Hence the framework plays well with other JavaScript frameworks like Jasmine, Mocha...
+- The frameworķ can be integrated right into the build pipelines which means it will run in
+our build and deployment pipelines.
+    - Automating the entire end to end functional flows.
+    - Helps in building automated test suites when the application or product sizes outgrows.
+    - Protractor framework is used for End to End Testing.
+    - BDD frameworks like Cucumber are also used for testing the functional flows.
