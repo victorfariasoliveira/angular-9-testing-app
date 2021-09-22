@@ -117,3 +117,17 @@ NodeJS, Selenium, Jasmine, WebDriver, Cucumber, Mocha etc.
 regression tests for any web applications.
 
 - It allows us to test our application just like a real user because it runs the test using an actual browser.
+
+## Cucumber Framework
+
+- Cucumber is a tool that supports Behaviour-Driven Development(BDD).
+
+- Cucumber is Open Source software.
+
+- Cucumber reads executable specifications written in plain text and validates that the
+software does what those specifications say.
+
+- The specifications consists of multiple examples, or scenarios.
+
+- Gherkin is a set of grammar rules that makes plain text structured enough for
+Cucumber to understand.
