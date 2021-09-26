@@ -1,6 +1,29 @@
 # angular-9-testing-app
 Application called shop4less for running tests in Angular with Angular 9 and Jasmine.js
 
+## Up the project
+
+- Clone this repo.
+
+- Access the cloned repository and run in your terminal: 
+
+        npm install && npm install json-server
+
+- Up the backend on json-server with:
+
+        npm run start-backend
+
+- Open a new tab on your terminal and run:
+
+        npm start
+
+## Execute Unit Tests
+
+    npm run test
+
+## Execute E2E Tests
+
+    npm run e2e
 ## Frameworks and Tooling used:
 
 
