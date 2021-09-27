@@ -13,7 +13,7 @@ Application called shop4less for running tests in Angular with Angular 9 and Jas
 
         npm run start-backend
 
-- Open a new tab on your terminal and run:
+- Open a new tab on your terminal and run this command below to up frontend:
 
         npm start
 
@@ -156,3 +156,39 @@ software does what those specifications say.
 
 - Gherkin is a set of grammar rules that makes plain text structured enough for
 Cucumber to understand.
+
+## AAA Pattern
+- Arrange - "arrange" everything like setup ground work for working with tests for execution.
+- Act - Act on your unit test case, calling methods, processing data, etc.
+- Assert - Verifying the actual data of test result and expected data.
+
+### Example
+    describe('AppComponent', () => {
+        
+        // Arrange
+
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+        imports: [
+            RouterTestingModule
+        ],
+        declarations: [
+            AppComponent
+        ],
+        }).compileComponents();
+    }));
+
+      it('should render title', () => {
+
+          // Act
+
+        const fixture = TestBed.createComponent(AppComponent);
+        fixture.detectChanges();
+        const compiled = fixture.nativeElement;
+
+        // Assert
+        
+        expect(compiled.querySelector('.content span').textContent).toContain('shop4less app is running!');
+        });
+    });
+
