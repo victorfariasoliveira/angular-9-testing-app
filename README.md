@@ -157,6 +157,8 @@ software does what those specifications say.
 - Gherkin is a set of grammar rules that makes plain text structured enough for
 Cucumber to understand.
 
+
+# Understanding Patterns and Specificities
 ## AAA Pattern
 - Arrange - "arrange" everything like setup ground work for working with tests for execution.
 - Act - Act on your unit test case, calling methods, processing data, etc.
@@ -187,8 +189,51 @@ Cucumber to understand.
         const compiled = fixture.nativeElement;
 
         // Assert
-        
+
         expect(compiled.querySelector('.content span').textContent).toContain('shop4less app is running!');
         });
     });
 
+## BeforeEach Method
+- We use an async before each. The purpose of the async is to let all the possible asynchronous code to finish before continuing.
+
+
+- Before running any test in angular you need to configure an angular testbed.
+
+
+- This allows you to create an angular environment for the component being
+tested.
+
+
+- Any module, component or service that your tested component needs have to
+be included in the testbed. Finally, after setting the configuration, you call the
+compile components function.
+
+## Angular TestBed (ATB)
+
+- It creates an Angular testing module — a @Ng Module class — that you configure with the
+configure Testing Module method to produce the module environment for the class you
+want to test.
+
+
+- Configures and initializes environment for unit testing and provides methods for creating
+components and services in unit tests.
+
+
+- It creates a dependency injection (DI) context and allows us to override providers, services,
+and whole modules.
+
+
+-  It compiles, instantiates, and renders to HTML our components attaching them to the fixture
+instance. Any module, component or service that your tested component needs have to be
+included in the testbed.
+
+
+- Finally, after setting the configuration, you call the compile components function.
+
+### Example
+
+    beforeEach(() => {
+        TestBed.configureTestingModule({})
+        service1 = TestBed.inject(ProductService)
+    })
